@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+
+    <h1>Troque as cores!</h1>
+
+    <h2>Alterar a cor do fundo:</h2>
+    <button onclick="changeBackgroundColor('red')">Vermelho</button>
+    <button onclick="changeBackgroundColor('blue')">Azul</button>
+    <button onclick="changeBackgroundColor('green')">Verde</button>
+    <button onclick="changeBackgroundColor('yellow')">Amarelo</button>
+    <button onclick="changeBackgroundColor('purple')">Roxo</button>
+
+    <h2>Alterar a cor do texto:</h2>
+    <button onclick="changeTextColor('black')">Preto</button>
+    <button onclick="changeTextColor('white')">Branco</button>
+    <button onclick="changeTextColor('orange')">Laranja</button>
+    <button onclick="changeTextColor('pink')">Rosa</button>
+    <button onclick="changeTextColor('gray')">Cinza</button>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function changeTextColor(color) {
+            document.body.style.color = color;
+        }
+    </script>
+
+</body>
+
+</html>
