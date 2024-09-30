@@ -9,7 +9,7 @@
 <body>
 
     <h1>Calculadora de Tabuada</h1>
-    <input type="number" id="numberInput" placeholder="Digite um número" min="0">
+    <input id="numberInput" placeholder="Digite um número" min="0">
     <input type="button" value="Calcular Tabuada" onclick="calculateTabuada()">
 
     <table id="resultTable" style="display:none;">
@@ -40,7 +40,7 @@
             // Preenche a tabela com a tabuada
             for (let i = 1; i <= 10; i++) {
                 const result = number * i;
-                const row = `<tr><td>${i} * ${number}</td><td>${result}</td></tr>`;
+                const row = `<tr><td>${number} x ${i}</td><td>${result}</td></tr>`;
                 resultBody.innerHTML += row;
             }
 
